@@ -1,0 +1,149 @@
+:root{
+    --background-body: #0c1014;
+    --background-button: #cbe300;
+    --background-plans: #1f262c;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    background-color: var(--background-body);
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.container-wrapper{
+    max-width: 960px;
+    margin: auto;
+}
+
+.topHeader{
+    background-color: #05080a;
+}
+
+.topHeader_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em 0 2em;
+}
+
+.nav_link_logo{
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+.nav_list_menu{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.nav_list_menu li{
+    display: inline-block;
+}
+
+.nav_list_menu li a{
+    padding: .8em 1em;
+    display: block;
+    border-radius: 5px;
+    transition: background-color .5s ease-in-out, 
+                color .5s ease-in-out
+    ;
+}
+.nav_list_menu li a:hover{
+    background-color: var(--background-button);
+    color: var(--background-body);
+}
+
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_title{
+    text-align: center;
+    font-size: 5.4em;
+    text-transform: uppercase;
+    margin: 32px 0px;
+    color: white;
+}
+
+
+.main_planos{
+    width: 100%;
+    display: flex;
+    gap: 1em;
+}
+
+.plano{
+    width: 100%;
+    height: 350px;
+    padding: 30px;
+    background-color: var(--background-plans);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(0 0 0 / .3);
+    
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.plano_title{
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 24px;
+}
+
+.plano_divisor{
+    width: 100%;
+    height: 2px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: var(--background-button);
+}
+
+.plano_preco{
+    margin: 16px 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.plano_preco span{
+    font-size: 13px;
+}
+
+.plano_list{
+    flex-grow: 1;
+    margin: 0;
+    padding-left: 20px;
+    line-height: 26px;
+}
+
+.plano_list li::marker {
+    color: #cbe300;
+}
+
+.plano_assine{
+    background-color: var(--background-button);
+    padding: .8em 0;
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: var(--background-body);
+    font-weight: bold;
+    text-align: center;
+    transition: box-shadow .2s ease-in-out;
+}
+
+.plano_assine:hover{
+    box-shadow: 0px 0px 5px var(--background-button);
+}
